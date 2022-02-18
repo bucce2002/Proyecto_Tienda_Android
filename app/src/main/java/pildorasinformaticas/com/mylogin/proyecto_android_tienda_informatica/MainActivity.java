@@ -1,7 +1,6 @@
 package pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
