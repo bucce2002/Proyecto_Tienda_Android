@@ -22,53 +22,53 @@ public class ListaProductos {
     public void inicializar(){
         listaProductos = new ArrayList<>();
         Producto producto = new Producto();
-        producto.setId_producto(contador++);
+        //producto.setId_producto(contador++);
         producto.setPrecio(10);
         producto.setMarca("nintendo");
         producto.setTipo("Mario");
         producto.setNombre("nintendo");
         producto.setInformacion("Mario");
-        producto.setImagen("nintendo");
+        //producto.setImagen("nintendo");
         listaProductos.add(producto);
 
         producto = new Producto();
-        producto.setId_producto(contador++);
+        //producto.setId_producto(contador++);
         producto.setPrecio(10);
         producto.setMarca("nintendo");
         producto.setTipo("Mario");
         producto.setNombre("nintendo");
         producto.setInformacion("Mario");
-        producto.setImagen("nintendo");
+        //producto.setImagen("nintendo");
         listaProductos.add(producto);
 
         producto = new Producto();
-        producto.setId_producto(contador++);
+        //producto.setId_producto(contador++);
         producto.setPrecio(10);
         producto.setMarca("nintendo");
         producto.setTipo("Mario");
         producto.setNombre("nintendo");
         producto.setInformacion("Mario");
-        producto.setImagen("nintendo");
+        //producto.setImagen("nintendo");
         listaProductos.add(producto);
 
         producto = new Producto();
-        producto.setId_producto(contador++);
+        //producto.setId_producto(contador++);
         producto.setPrecio(10);
         producto.setMarca("nintendo");
         producto.setTipo("Mario");
         producto.setNombre("nintendo");
         producto.setInformacion("Mario");
-        producto.setImagen("nintendo");
+        //producto.setImagen("nintendo");
         listaProductos.add(producto);
 
         producto = new Producto();
-        producto.setId_producto(contador++);
+        //producto.setId_producto(contador++);
         producto.setPrecio(10);
         producto.setMarca("nintendo");
         producto.setTipo("Mario");
         producto.setNombre("nintendo");
         producto.setInformacion("Mario");
-        producto.setImagen("nintendo");
+        //producto.setImagen("nintendo");
         listaProductos.add(producto);
         System.out.println("#########################" + listaProductos);
     }
