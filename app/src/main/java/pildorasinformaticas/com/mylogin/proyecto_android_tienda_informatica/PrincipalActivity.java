@@ -4,37 +4,37 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.Button;
 
 import java.util.List;
+import java.util.Objects;
 
 import pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica.adaptador.AdaptadorProducto;
 import pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica.entidades.Producto;
 import pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica.modelo.ListaProductos;
 
-public class MainActivity extends AppCompatActivity {
+public class PrincipalActivity extends AppCompatActivity {
     private RecyclerView miReyclerViewUser;
-    private AdaptadorProducto adaptadorProducto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_principal);
         miReyclerViewUser = findViewById(R.id.recyclerV);
         miReyclerViewUser.setHasFixedSize(true);
         miReyclerViewUser.setLayoutManager(new LinearLayoutManager(this));
 
         ListaProductos.getInstance().inicializar();
         List<Producto> listaProducto = ListaProductos.getInstance().getListaProductos();
-        adaptadorProducto = new AdaptadorProducto(listaProducto);
+        AdaptadorProducto adaptadorProducto = new AdaptadorProducto(listaProducto);
         miReyclerViewUser.setAdapter(adaptadorProducto);
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     protected void onResume() {
         super.onResume();
-        miReyclerViewUser.getAdapter().notifyDataSetChanged();
+        Objects.requireNonNull(miReyclerViewUser.getAdapter()).notifyDataSetChanged();
     }
 }

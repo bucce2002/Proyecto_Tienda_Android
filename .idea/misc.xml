@@ -3,7 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable-v24/background1.xml" value="0.1" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable-v24/background2.xml" value="0.1" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable-v24/boton_custom.xml" value="0.1" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable-v24/gradient_list.xml" value="0.1" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable-v24/ic_contra.xml" value="0.1" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable-v24/ic_mail.xml" value="0.1" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable-v24/inputs_custom.xml" value="0.1" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_principal.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_registro.xml" value="0.176" />
+        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/background1.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/principal.xml" value="0.264" />
       </map>
     </option>
