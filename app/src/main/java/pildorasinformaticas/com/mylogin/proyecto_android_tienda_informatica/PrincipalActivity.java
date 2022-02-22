@@ -14,6 +14,7 @@ import pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica.adap
 import pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica.entidades.Producto;
 import pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica.modelo.ListaProductos;
 
+
 public class PrincipalActivity extends AppCompatActivity {
     private RecyclerView miReyclerViewUser;
 

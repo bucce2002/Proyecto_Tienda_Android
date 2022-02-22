@@ -87,4 +87,14 @@
         android:shadowRadius="5"
         android:text="@string/registrarme"
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/backdoor"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="backdoor" />
 </RelativeLayout>

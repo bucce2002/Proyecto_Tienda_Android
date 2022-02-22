@@ -13,6 +13,8 @@ import pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica.enti
 public class AdaptadorProducto extends RecyclerView.Adapter<AdaptadorProducto.ViewHolder>{
     private List<Producto> listaProductos;
 
+
+
     public AdaptadorProducto(List<Producto> listaProductos) {
         this.listaProductos = listaProductos;
     }
