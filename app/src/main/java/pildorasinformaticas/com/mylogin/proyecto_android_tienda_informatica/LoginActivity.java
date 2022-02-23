@@ -25,6 +25,12 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        setTheme(R.style.Theme_Proyecto_Android_Tienda_Informatica);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Button b1 = findViewById(R.id.btnEntrar);

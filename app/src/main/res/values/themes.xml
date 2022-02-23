@@ -21,4 +21,7 @@
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.Proyecto_Android_Tienda_Informatica.PopupOverlay"
         parent="ThemeOverlay.AppCompat.Light" />
+    <style name="splashTheme" parent="Theme.Proyecto_Android_Tienda_Informatica">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
 </resources>
