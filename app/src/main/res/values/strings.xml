@@ -12,4 +12,17 @@
     <string name="marca">Marca:</string>
     <string name="tipo">Tipo:</string>
     <string name="caracteristicas">Caracteristicas:</string>
+    <string name="ventajas_de_esta_version">Ventajas de esta version</string>
+    <string name="suscripcion_y_precios">Suscripcion y precios</string>
+    <string name="tiempo_para_devolver_un_producto">¿TIempo para devolver un producto?</string>
+    <string name="sobre_shopinfo">Sobre Shopinfo</string>
+    <string name="preguntas_frecuentes">Preguntas frecuentes</string>
+    <string name="que_es_shopinfo">¿Que es shopinfo?</string>
+    <string name="los_productos_tienen_garantia">¿Los productos tienen garantia?</string>
+    <string name="usar_shopinfo">Usar Shopinfo</string>
+    <string name="metodos_de_pago">Metodos de pago</string>
+    <string name="tiempos_de_entrega_aproximados">Tiempos de entrega aproximados</string>
+    <string name="quienes_somos_y_que_ofrecemos">Quienes somos y que ofrecemos</string>
+    <string name="shopinfo_premium">Shopinfo premium</string>
+    <string name="que_es_shopinfo_premium">¿Que es shopinfo premium?</string>
 </resources>

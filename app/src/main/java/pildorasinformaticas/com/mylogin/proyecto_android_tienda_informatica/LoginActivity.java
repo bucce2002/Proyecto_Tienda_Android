@@ -21,8 +21,6 @@ public class LoginActivity extends AppCompatActivity {
     String clave2,correo2;
     Button backdoor;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
