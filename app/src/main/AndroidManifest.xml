@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Proyecto_Android_Tienda_Informatica"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".AyudaActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"
@@ -22,7 +22,7 @@
             android:name=".PrincipalActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".AyudaActivity"
             android:exported="true"
             android:theme="@style/splashTheme">
             <intent-filter>
