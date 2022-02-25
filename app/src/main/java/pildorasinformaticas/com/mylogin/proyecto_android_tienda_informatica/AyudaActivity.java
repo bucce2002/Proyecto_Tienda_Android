@@ -3,17 +3,27 @@ package pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AyudaActivity extends AppCompatActivity {
     private TextView txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8;
+    private ImageView menu, filtro, logo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ayuda);
+        menu = findViewById(R.id.menuIc);
+        filtro = findViewById(R.id.filtroIc);
+        logo = findViewById(R.id.logoIc);
         txt1 = findViewById(R.id.textView3);
         txt2 = findViewById(R.id.textView4);
         txt3 = findViewById(R.id.textView5);
@@ -22,6 +32,70 @@ public class AyudaActivity extends AppCompatActivity {
         txt6 = findViewById(R.id.textView11);
         txt7 = findViewById(R.id.textView12);
         txt8 = findViewById(R.id.textView13);
+
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),PrincipalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        filtro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popup = new PopupMenu(AyudaActivity.this, v);
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()){
+                            case R.id.opcion1:
+                                Toast.makeText(AyudaActivity.this, "Opcion 1", Toast.LENGTH_SHORT).show();
+                                return true;
+                            case R.id.opcion2:
+                                return true;
+                            case R.id.opcion3:
+                                Toast.makeText(AyudaActivity.this, "Opcion 2", Toast.LENGTH_SHORT).show();
+                                return true;
+                            default:
+                                return false;
+                        }
+
+                    }
+                });
+                MenuInflater inflater = popup.getMenuInflater();
+                inflater.inflate(R.menu.menu_filtro, popup.getMenu());
+                popup.show();
+            }
+        });
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popup = new PopupMenu(AyudaActivity.this, v);
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()){
+                            case R.id.opcion1:
+                                Toast.makeText(AyudaActivity.this, "Opcion 1", Toast.LENGTH_SHORT).show();
+                                return true;
+                            case R.id.opcion2:
+                                return true;
+                            case R.id.opcion3:
+                                Toast.makeText(AyudaActivity.this, "Opcion 2", Toast.LENGTH_SHORT).show();
+                                return true;
+                            default:
+                                return false;
+                        }
+
+                    }
+                });
+                MenuInflater inflater = popup.getMenuInflater();
+                inflater.inflate(R.menu.menu_principal, popup.getMenu());
+                popup.show();
+            }
+        });
 
         txt1.setOnClickListener(new View.OnClickListener() {
             @Override
