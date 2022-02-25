@@ -21,6 +21,8 @@ public class LoginActivity extends AppCompatActivity {
     String clave2,correo2;
     Button backdoor;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
@@ -54,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
        clave2=clave.getText().toString();
        correo2=correo.getText().toString();
        if (!clave2.isEmpty() && !correo2.isEmpty()){
-       validarUsuario("http://10.34.83.240/tienda/validarUsuario.php");
+       validarUsuario("http://10.34.82.230/tienda/validarUsuario.php");
    }else{
            Toast.makeText(LoginActivity.this,"Rellena ambos campos",Toast.LENGTH_LONG);
        }});

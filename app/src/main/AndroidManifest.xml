@@ -3,6 +3,7 @@
     package="pildorasinformaticas.com.mylogin.proyecto_android_tienda_informatica">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +14,7 @@
         android:theme="@style/Theme.Proyecto_Android_Tienda_Informatica"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".LoginActivity"
+            android:name=".AyudaActivity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"
@@ -22,7 +23,7 @@
             android:name=".PrincipalActivity"
             android:exported="true" />
         <activity
-            android:name=".AyudaActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/splashTheme">
             <intent-filter>
@@ -32,4 +33,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

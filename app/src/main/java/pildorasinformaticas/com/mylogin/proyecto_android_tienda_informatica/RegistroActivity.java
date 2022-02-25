@@ -78,7 +78,7 @@ public class RegistroActivity extends AppCompatActivity {
 
         else{
             progressDialog.show();
-            StringRequest request = new StringRequest(Request.Method.POST, "http://10.34.83.240/tienda/ingresarUsuario.php",
+            StringRequest request = new StringRequest(Request.Method.POST, "http://10.34.82.230/tienda/ingresarUsuario.php",
                     response -> {
 
                         if(response.equalsIgnoreCase("Datos insertados")){
@@ -87,12 +87,12 @@ public class RegistroActivity extends AppCompatActivity {
 
                             progressDialog.dismiss();
 
-                            Intent intent=new Intent(RegistroActivity.this,LoginActivity.class);
-                            startActivity(intent);
+
                         }
                         else{
                             Toast.makeText(RegistroActivity.this, response, Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
+                            abrirLogin();
                             Toast.makeText(RegistroActivity.this, "Datos insertados", Toast.LENGTH_SHORT).show();
                         }
 
@@ -120,5 +120,10 @@ public class RegistroActivity extends AppCompatActivity {
 
         }
 
+    }
+    private void abrirLogin() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        //overridePendingTransition(R.anim.in,R.anim.out);
     }
 }

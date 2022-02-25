@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondosaaw"
     tools:context=".AyudaActivity">
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -203,4 +202,5 @@
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
