@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drk"
+    tools:context=".PrincipalActivity">
+
+    <ImageView
+        android:id="@+id/menuIc"
+        android:layout_width="53dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_baseline_menu_24" />
+
+    <ImageView
+        android:id="@+id/logoIc"
+        android:layout_width="54dp"
+        android:layout_height="68dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="110dp"
+        android:layout_toRightOf="@id/menuIc"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/filtroIc"
+        android:layout_width="58dp"
+        android:layout_height="69dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="117dp"
+        android:layout_toRightOf="@id/logoIc"
+        android:src="@drawable/ic_baseline_filter_alt_24" />
+
+    <ImageView
+        android:id="@+id/linea"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/logoIc"
+        android:src="@drawable/linea"
+        android:layout_marginTop="3dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerV"
+        android:layout_width="326dp"
+        android:layout_height="595dp"
+        android:layout_below="@id/linea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>
