@@ -75,13 +75,13 @@ public class PrincipalActivity extends AppCompatActivity implements AdaptadorIma
             popup.setOnMenuItemClickListener(item -> {
                 switch (item.getItemId()){
                     case R.id.opcion1:
-                        Toast.makeText(PrincipalActivity.this, "Opcion 1", Toast.LENGTH_SHORT).show();
+                        irPerfil();
                         return true;
                     case R.id.opcion2:
                         irAyuda();
                         return true;
                     case R.id.opcion3:
-                        Toast.makeText(PrincipalActivity.this, "Opcion 2", Toast.LENGTH_SHORT).show();
+                        salir();
                         return true;
                     default:
                         return false;
@@ -162,6 +162,16 @@ public class PrincipalActivity extends AppCompatActivity implements AdaptadorIma
 
     public void irAyuda(){
         Intent intent = new Intent(getApplicationContext(),AyudaActivity.class);
+        startActivity(intent);
+    }
+
+    public void salir(){
+        Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void irPerfil(){
+        Intent intent = new Intent(getApplicationContext(),PerfilActivity.class);
         startActivity(intent);
     }
 

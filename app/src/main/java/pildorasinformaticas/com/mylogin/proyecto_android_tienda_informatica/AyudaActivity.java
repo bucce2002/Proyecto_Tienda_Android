@@ -62,12 +62,12 @@ public class AyudaActivity extends AppCompatActivity {
             popup.setOnMenuItemClickListener(item -> {
                 switch (item.getItemId()){
                     case R.id.opcion1:
-                        Toast.makeText(AyudaActivity.this, "Opcion 1", Toast.LENGTH_SHORT).show();
+                        irPerfil();
                         return true;
                     case R.id.opcion2:
                         return true;
                     case R.id.opcion3:
-                        Toast.makeText(AyudaActivity.this, "Opcion 2", Toast.LENGTH_SHORT).show();
+                        salir();
                         return true;
                     default:
                         return false;
@@ -142,5 +142,15 @@ public class AyudaActivity extends AppCompatActivity {
             AlertDialog dialog = builder.create();
             dialog.show();
         });
+    }
+
+    public void salir(){
+        Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void irPerfil(){
+        Intent intent = new Intent(getApplicationContext(),PerfilActivity.class);
+        startActivity(intent);
     }
 }

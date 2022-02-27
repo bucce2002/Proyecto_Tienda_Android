@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Proyecto_Android_Tienda_Informatica"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
             android:name=".InfoProducto"
             android:exported="false" />
         <activity
@@ -31,7 +34,6 @@
             android:theme="@style/splashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
