@@ -74,7 +74,7 @@ public class RegistroActivity extends AppCompatActivity {
 
         else{
             progressDialog.show();
-            StringRequest request = new StringRequest(Request.Method.POST, "http://10.34.82.230/tienda/ingresarUsuario.php",
+            StringRequest request = new StringRequest(Request.Method.POST, "http://10.34.82.76/tienda/ingresarUsuario.php",
                     response -> {
 
                         if(response.equalsIgnoreCase("Datos insertados")){

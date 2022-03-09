@@ -45,20 +45,26 @@ public class PrincipalActivity extends AppCompatActivity implements AdaptadorIma
         miReyclerViewUser.setHasFixedSize(true);
         miReyclerViewUser.setLayoutManager(new LinearLayoutManager(this));
 
+
         filtro.setOnClickListener(v -> {
             PopupMenu popup = new PopupMenu(PrincipalActivity.this, v);
             popup.setOnMenuItemClickListener(item -> {
                 switch (item.getItemId()){
                     case R.id.opcion1:
-
+                        listaProducto.clear();
                         cargarWebServicePerifericos();
-
                         return true;
                     case R.id.opcion2:
+                        listaProducto.clear();
                         cargarWebServiceOrdenador();
                         return true;
                     case R.id.opcion3:
+                        listaProducto.clear();
                         cargarWebServiceTelefonos();
+                        return true;
+                    case R.id.opcion4:
+                        listaProducto.clear();
+                        cargarWebServicePrincipal();
                         return true;
                     default:
                         return false;
@@ -99,37 +105,33 @@ public class PrincipalActivity extends AppCompatActivity implements AdaptadorIma
     }
 
     private void cargarWebServicePrincipal() {
-        String URL ="http://10.34.82.230/tienda/Recicler.php";
+        String URL ="http://10.34.82.76/tienda/Recicler.php";
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,URL,null,this,this);
         request.add(jsonObjectRequest);
-
     }
     private void cargarWebServiceOrdenador() {
-        String URL ="http://10.34.82.230/tienda/ReciclerOrdenador.php";
+        String URL ="http://10.34.82.76/tienda/ReciclerOrdenador.php";
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,URL,null,this,this);
         request.add(jsonObjectRequest);
 
     }
     private void cargarWebServicePerifericos() {
-        String URL ="http://10.34.82.230/tienda/ReciclerPerifericos.php";
+        String URL ="http://10.34.82.76/tienda/ReciclerPerifericos.php";
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,URL,null,this,this);
         request.add(jsonObjectRequest);
 
     }
     private void cargarWebServiceTelefonos() {
-        String URL ="http://10.34.82.230/tienda/ReciclerTelefono.php";
+        String URL ="http://10.34.82.76/tienda/ReciclerTelefono.php";
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,URL,null,this,this);
         request.add(jsonObjectRequest);
 
     }
 
-
-
     @Override
     public void onErrorResponse(VolleyError error) {
 
     }
-
     @Override
     public void onResponse(JSONObject response) {
         Producto producto;
@@ -149,9 +151,8 @@ public class PrincipalActivity extends AppCompatActivity implements AdaptadorIma
                 listaProducto.add(producto);
             }
 
-            AdaptadorImagenProducto adaptador = new AdaptadorImagenProducto(listaProducto, this);
-            miReyclerViewUser.setAdapter(adaptador);
 
+            PrincipalActivity.this.onStart();
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -182,5 +183,11 @@ public class PrincipalActivity extends AppCompatActivity implements AdaptadorIma
         intent.putExtra("nombre",listaProducto.get(position).getNombre());
         intent.putExtra("precio",listaProducto.get(position).getPrecio());
         startActivity(intent);
+    }
+    @Override
+    protected void onStart() {
+        AdaptadorImagenProducto adaptador = new AdaptadorImagenProducto(listaProducto, this);
+        miReyclerViewUser.setAdapter(adaptador);
+        super.onStart();
     }
 }

@@ -3,15 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/antonio/AndroidStudioProjects/Proyecto_Android_Tienda_Informatica 3/app/src/main/res/layout/activity_info_producto.xml" value="0.2" />
-        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable-v24/boton_custom_white.xml" value="0.104" />
-        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable/circular.xml" value="0.104" />
-        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable/imagen.xml" value="0.104" />
-        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/drawable/inputs_custom_white.xml" value="0.104" />
-        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_ayuda.xml" value="0.176" />
-        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_login.xml" value="0.17572463768115942" />
-        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_perfil.xml" value="0.264" />
-        <entry key="..\:/Users/jesus/Downloads/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_principal.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/antonio/AndroidStudioProjects/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_info_producto.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/antonio/AndroidStudioProjects/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_perfil.xml" value="0.25" />
+        <entry key="..\:/Users/antonio/AndroidStudioProjects/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_principal.xml" value="0.1" />
+        <entry key="..\:/Users/antonio/AndroidStudioProjects/Proyecto_Android_Tienda_Informatica/app/src/main/res/layout/activity_registro.xml" value="0.1358695652173913" />
+        <entry key="..\:/Users/antonio/AndroidStudioProjects/Proyecto_Android_Tienda_Informatica/app/src/main/res/menu/menu_filtro.xml" value="0.140625" />
       </map>
     </option>
   </component>

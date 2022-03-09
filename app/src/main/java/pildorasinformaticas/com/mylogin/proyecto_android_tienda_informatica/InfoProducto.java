@@ -24,8 +24,8 @@ public class InfoProducto extends AppCompatActivity {
 
 
         //fotoProd.setImageBitmap((Bitmap) getIntent().getExtras().get("imagen"));
-        nombreProd.setText(getIntent().getExtras().getString("nombre"));
-        precioProd.setText(String.valueOf(getIntent().getExtras().getInt("precio")));
+        nombreProd.setText("Nombre del producto: " +getIntent().getExtras().getString("nombre"));
+        precioProd.setText(String.valueOf("Precio del producto: " + getIntent().getExtras().getInt("precio")));
 
         //ANIMACION DEL FONDO
         AnimationDrawable animationDrawable =  (AnimationDrawable) relativeLayout.getBackground();

@@ -19,34 +19,72 @@
             android:id="@+id/fotoProd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true" />
+
         <TextView
             android:id="@+id/nombreProd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/fotoProd"
             android:layout_centerHorizontal="true"
-            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center_horizontal|center_vertical"
             android:textColor="@color/black"
-            android:layout_below="@id/fotoProd"/>
+            android:textSize="20dp" />
+
         <TextView
             android:id="@+id/precioProd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:textSize="30dp"
             android:layout_below="@id/nombreProd"
-            android:textColor="@color/black"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:textSize="30dp"/>
+            android:textSize="30dp" />
+
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
+
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtUnidades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precioProd"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Ingrese cantidad"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#6E6969"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtCompra"
+            android:layout_width="168dp"
+            android:layout_height="67dp"
+            android:layout_below="@id/txtUnidades"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/boton_custom"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Comprar"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold|italic" />
+
     </RelativeLayout>
 
 </RelativeLayout>

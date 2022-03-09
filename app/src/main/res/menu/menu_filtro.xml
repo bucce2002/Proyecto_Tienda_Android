@@ -13,4 +13,7 @@
         android:title="Telefonos"
         app:showAsAction="always|withText"
         />
+    <item
+        android:id="@+id/opcion4"
+        android:title="todos" />
 </menu>

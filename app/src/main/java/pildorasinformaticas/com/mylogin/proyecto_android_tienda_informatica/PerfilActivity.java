@@ -7,9 +7,12 @@ import android.os.Bundle;
 import android.view.MenuInflater;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PerfilActivity extends AppCompatActivity {
+
+    private TextView verNombre,verEmail,verDireccion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +20,11 @@ public class PerfilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
         ImageView menu = findViewById(R.id.menuIc);
         ImageView logo = findViewById(R.id.logoIc);
+        verNombre = findViewById(R.id.verNombre);
+        verEmail = findViewById(R.id.verEmail);
+        verDireccion = findViewById(R.id.verDireccion);
+        verNombre.setText("Nombre del producto: " +getIntent().getExtras().getString("nombre"));
+
 
         menu.setOnClickListener(v -> {
             PopupMenu popup = new PopupMenu(PerfilActivity.this, v);
